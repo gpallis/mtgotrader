@@ -1,0 +1,28 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}profile.css" />
+<title>{{user.username}}'s Profile</title>
+</head>
+<body>
+<div style="border-bottom:1px solid">
+Hi <strong>{{user.username}}</strong>. Welcome to the user profile area!
+<form method="POST" action="../logout/">
+    {% csrf_token %}
+    <input style="position:absolute;top:10;right:10" type="submit" value="Log out.">
+</form>
+</div>
+<p>
+<! this should be a seperate view really. /!>
+While logged in, you've voted for:
+{{dong}}
+<div class="pastVotes">
+    <ul>
+        {% for vote in votes %}
+        <li><strong>{{vote.accepted.name}}</strong> over <strong>{{vote.rejected.name}}</strong></li>
+        {%endfor%}
+    <ul>
+</div>
+Time to go and vote on some cards!
+<script>alert('hi '+{{votehistory}})
+</body>
+</html>

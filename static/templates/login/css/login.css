@@ -1,0 +1,22 @@
+form.formholder {
+    width:250px;
+    border:1px solid;
+    overflow: hidden;
+    margin:auto;
+}
+
+div.formliner {
+    font-size:10px;
+    padding-left: 5px;
+    padding-top:10px;
+    font-family:tahoma, courier
+}
+
+div.formTitle {
+    padding-left:5px;
+    padding-bottom:3px;
+    background-color:007700;
+    color:FFFFFF;
+    font-size:12px;
+    font-family:tahoma;
+}

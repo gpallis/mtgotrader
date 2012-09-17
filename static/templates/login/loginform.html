@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Logging in to Latinator</title>
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}login/css/login.css" />
+</head>
+<body>
+<form class="formholder" style="float:left" method="POST" action="">
+{% csrf_token %}
+<div class="formtitle">Login form for Latinator</div>
+<div class="formliner">
+    Username:<br>
+    <input type="text" name="username"/>
+    <p>
+    Password:<br>
+    <input type="password" name="password"/>
+    <input type="submit" value="Sign in" style="float:right;margin-right:10px">
+</div>
+<span style="color:red;font-size:12px;padding-left:5px">{{msg}}</span>
+</form>
+</body>
+</html>

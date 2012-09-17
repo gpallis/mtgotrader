@@ -7,6 +7,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^trader/$', 'cardviewer.views.home'),
+    url(r'^trader/login/$', 'loginapp.views.loginattempt'),
     #url(r'^mtgotrader/', include('mtgotrader.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

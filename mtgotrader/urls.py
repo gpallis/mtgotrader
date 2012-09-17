@@ -6,12 +6,12 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    #url(r'^$', 'mtgotrader.views.home', name='home'),
+    url(r'^trader/$', 'cardviewer.views.home'),
     #url(r'^mtgotrader/', include('mtgotrader.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^trader/admin/', include(admin.site.urls)),
 )

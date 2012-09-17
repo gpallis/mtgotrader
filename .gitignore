@@ -1,5 +1,7 @@
 *.pyc
 *.py~
+*.html~
+
 .DS_Store
 mtgotrader/settings.py~
 mtgotrader/urls.py~

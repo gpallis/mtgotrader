@@ -14,3 +14,7 @@ def detail(request, card_id):
   return render(request, "detail.html", {'theCard':card})
  #return HttpResponse("You're looking at card %s." % card_id)
 
+def home(request):
+  return render(request, "home.html", {})
+ #return HttpResponse("You're looking at the home page!")
+

@@ -5,6 +5,6 @@ from django.contrib.auth.models import User
 # Create your models here.
 class Collection(models.Model):
     cards = models.ManyToManyField(Card)
-    owner = models.ForeignKey(User)
+    collection_owner = models.ForeignKey(User)
     def __unicode__(self):
-        return owner+ "'s Collection"
+        return self.collection_owner.username+ "'s Collection"

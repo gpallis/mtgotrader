@@ -9,6 +9,8 @@ urlpatterns = patterns('',
     url(r'^trader/$', 'cardviewer.views.home'),
     url(r'^trader/login/$', 'loginapp.views.loginattempt'),
     url(r'^trader/profile/$', 'loginapp.views.profile'),
+    url(r'^trader/collection/$', 'collectionviewer.views.collection'),
+    url(r'^trader/logout/$', 'django.contrib.auth.views.logout', {'next_page': '../'}),
     #url(r'^mtgotrader/', include('mtgotrader.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

@@ -4,7 +4,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+    # ('Your Name', 'your_emaOil@example.com'),
 )
 
 MANAGERS = ADMINS
@@ -125,6 +125,8 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'cardviewer',
     'loginapp',
+    'collectionviewer',
+    'south',
 )
 
 # A sample logging configuration. The only tangible logging

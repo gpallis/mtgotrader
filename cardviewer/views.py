@@ -6,5 +6,6 @@ def home (request):
   return render(request, "home.html", {})
   #return HttpResponse("die in a fire")
   
-def detail(request):
-  return render(request, "detail.html", {})
+def detail(request, card_id):
+  return HttpResponse("You're looking at card %s." % card_id)
+ #return render(request, "detail.html", {})

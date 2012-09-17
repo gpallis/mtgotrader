@@ -24,4 +24,4 @@ def loginpage(request,message):
     
 @login_required
 def profile(request):
-    return HttpResponse('hello ' + request.user.username)
+    return render(request,'login/profile.html',{})

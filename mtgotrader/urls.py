@@ -9,6 +9,7 @@ urlpatterns = patterns('',
     url(r'^trader/$', 'cardviewer.views.home'),
     url(r'^trader/login/$', 'loginapp.views.loginattempt'),
     url(r'^cardviewer/(?P<card_id>\d+)/$', 'cardviewer.views.detail'),
+    url(r'^trader/profile/$', 'loginapp.views.profile'),
     #url(r'^mtgotrader/', include('mtgotrader.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

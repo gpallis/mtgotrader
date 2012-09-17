@@ -1,12 +1,12 @@
 <html>
 <head>
-<title>Logging in to Latinator</title>
+<title>Logging in to TraderApp</title>
 <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}login/css/login.css" />
 </head>
 <body>
 <form class="formholder" style="float:left" method="POST" action="">
 {% csrf_token %}
-<div class="formtitle">Login form for Latinator</div>
+<div class="formtitle">Login form for MTGO Trader</div>
 <div class="formliner">
     Username:<br>
     <input type="text" name="username"/>
